@@ -12,39 +12,64 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
         .card {
             background: #1e1e1e;
-            padding: 30px;
-            border-radius: 12px;
+            padding: 30px 40px;
+            border-radius: 14px;
             text-align: center;
-            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            box-shadow: 0 0 25px rgba(255,255,255,0.08);
+            max-width: 320px;
+        }
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         button {
-            margin: 10px;
-            padding: 10px 20px;
+            margin: 8px;
+            padding: 10px 22px;
             font-size: 16px;
             border: none;
-            border-radius: 6px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: transform 0.1s ease;
+        }
+        button:hover {
+            transform: scale(1.05);
         }
         .yes {
-            background-color: #4CAF50;
+            background-color: #e50914;
             color: white;
         }
         .no {
-            background-color: #f44336;
+            background-color: #555;
             color: white;
         }
     </style>
 </head>
 <body>
     <div class="card">
+        <img 
+            class="logo" 
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+            alt="Netflix Logo"
+        >
         <h2>Hey Lau👋</h2>
-        <p>Do you want to Netflix & chill this Sunday? Let's choose a good movie along with a good food🍿</p>
-        <button class="yes" onclick="alert('Nice 😌 Looking forward to it!')">Yes</button>
-        <button class="no" onclick="alert('All good 😊 let's plan for something else if it doesn't rains')">No</button>
+        <p>Movie night this sunday? 🍿</p>
+        <button class="yes" onclick="alert('Nice 😌 Looking forward to it!')">
+            Yes
+        </button>
+        <button class="no" onclick="alert('All good 😊 Another time!')">
+            No
+        </button>
     </div>
 </body>
 </html>
-
