@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Safe Travels ✈️</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0f0f0f;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .card {
+        background: #1c1c1c;
+        padding: 35px 45px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0 0 30px rgba(255,255,255,0.08);
+        max-width: 380px;
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+    .quote {
+        font-style: italic;
+        color: #e50914;
+        margin-bottom: 25px;
+    }
+    button {
+        margin: 8px;
+        padding: 10px 22px;
+        font-size: 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    }
+    button:hover {
+        transform: scale(1.05);
+    }
+    .yes {
+        background-color: #e50914;
+        color: white;
+    }
+    .no {
+        background-color: #444;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+        <h2>Spain is lucky to have you 🇪🇸</h2>
+        <p>
+            Travel safe, enjoy every moment with your sister,  
+            and don’t forget to send me at least one sunny picture 😌
+        </p>
+        <p>
+            I’ll be missing you a little bit  
+            until you come back ✈️
+        </p>
+
+        <div class="quote">
+            “Te voy a extrañar, pero sé que volverás con más historias hermosas que contar.”
+        </div>
+
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <button class="yes" name="answer" value="I will miss you too" type="submit">
+                I’ll miss you too 💕
+            </button>
+            <button class="no" name="answer" value="Just enjoy Spain!" type="submit">
+                Just enjoy Spain 😄
+            </button>
+        </form>
+    </div>
+</body>
+</html>
