@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Safe Travels ✈️</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #0f0f0f;
-        color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-    .card {
-        background: #1c1c1c;
-        padding: 35px 45px;
-        border-radius: 16px;
-        text-align: center;
-        box-shadow: 0 0 30px rgba(255,255,255,0.08);
-        max-width: 380px;
-    }
-    h2 {
-        margin-bottom: 15px;
-        font-size: 22px;
-    }
-    p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 18px;
-    }
-    .quote {
-        font-style: italic;
-        color: #e50914;
-        margin-bottom: 25px;
-    }
-    button {
-        margin: 8px;
-        padding: 10px 22px;
-        font-size: 15px;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: 0.2s ease;
-    }
-    button:hover {
-        transform: scale(1.05);
-    }
-    .yes {
-        background-color: #e50914;
-        color: white;
-    }
-    .no {
-        background-color: #444;
-        color: white;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Safe Travels ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top, #ff9966, #ff5e62, #ffd194);
+            background-size: 200% 200%;
+            animation: sunrise 10s ease infinite;
+            color: white;
+        }
+
+        @keyframes sunrise {
+            0% { background-position: 50% 100%; }
+            50% { background-position: 50% 50%; }
+            100% { background-position: 50% 100%; }
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+            max-width: 400px;
+        }
+
+        .heart {
+            font-size: 50px;
+            animation: heartbeat 1.2s infinite;
+            display: inline-block;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .quote {
+            margin-top: 20px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     <div class="card">
-        <h2>Spain is lucky to have you 🇪🇸</h2>
+        <div class="heart">❤️</div>
+        <h2>Travel Safe</h2>
         <p>
-            Travel safe, enjoy every moment with your sister,  
-            and don’t forget to send me at least one sunny picture 😌
+            Enjoy every moment in Spain.<br>
+            I’ll be missing you until you come back.
         </p>
-        <p>
-            I’ll be missing you a little bit  
-            until you come back ✈️
-        </p>
-
         <div class="quote">
-            “Te voy a extrañar, pero sé que volverás con más historias hermosas que contar.”
+            “Aunque estés lejos, siempre estás cerca de mi corazón.”
         </div>
-
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-            <button class="yes" name="answer" value="I will miss you too" type="submit">
-                I’ll miss you too 💕
-            </button>
-            <button class="no" name="answer" value="Just enjoy Spain!" type="submit">
-                Just enjoy Spain 😄
-            </button>
-        </form>
     </div>
 </body>
 </html>
